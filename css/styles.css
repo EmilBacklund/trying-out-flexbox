@@ -34,15 +34,27 @@ Because they align the Main and Cross Axes*/
 min-height: 100px;
 /*flex-shrink: 0; makes the box to not shrink*/
 /*flex-grow: 1; takes up the white space*/
+/*Adding flex-basis: 0; on two flexboxes and
+then have flex-grow 1 on one box and flex-grow 2
+on the other will make the box with flex-grow 2
+to be twice the size as the box with flex-grow 1.*/
+/*align-self: center;*/
+/*order: 1; makes the element to be first in order,
+order: 2; second order, and so on*/
 flex-shrink: 0;
+align-self: flex-end;
+order: 3;
 }
 
 .flexbox2 {
-min-height: 280px;
+min-height: 200px;
 flex-grow: 2;
+flex-basis: 0;
+align-self: center;
 }
 
 .flexbox3 {
     min-height: 380px;
     flex-grow: 1;
+    flex-basis: 0;
 }
