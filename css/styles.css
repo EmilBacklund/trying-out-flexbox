@@ -1,0 +1,48 @@
+.flexbox-container {
+display: flex;
+/*justify-content with flex-direction: column;
+doesn't center the boxes on the Cross axes.
+It center the boxes in the column vertical.
+Use align-items: center; to align it in the center
+of the Cross Axes*/
+/*justify-content = align on Main Axis*/
+/*justify-content: flex-start*/
+/*justify-content: space-between*/
+/*justify-content: center*/
+/*justify-content: space-around*/
+/*align-items = align on Cross Axis*/
+/*align items: flex-start*/
+/*align-items: stretch*/
+/*align-items: center*/
+/*align-content: flex-end*/
+/*align-content: flex-start*/
+/*align-content: center*/
+/*align-content: space-between*/
+/*TIP: Don't use align-content that much, 
+use align-content and align-items more.
+Because they align the Main and Cross Axes*/
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: white;
+}
+
+.flexbox1 {
+min-height: 100px;
+/*flex-shrink: 0; makes the box to not shrink*/
+/*flex-grow: 1; takes up the white space*/
+flex-shrink: 0;
+}
+
+.flexbox2 {
+min-height: 280px;
+flex-grow: 2;
+}
+
+.flexbox3 {
+    min-height: 380px;
+    flex-grow: 1;
+}
